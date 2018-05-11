@@ -1,0 +1,11 @@
+../angular/angular.min.js
+../angular/angular-animate.min.js
+../angular/angular-chosen.min.js
+../angular/angular-busy.min.js
+../angular/ui-bootstrap-tpls-2.5.0.min.js
+../angular/angular-ui-router.min.js
+../angular/ng-pagination.min.js
+../angular/angular-sanitize.min.js
+../angular/angular-translate.min.js
+../angular/angular-translate-loader-static-files.min.js
+../angular/ng-file-upload-all.min.js

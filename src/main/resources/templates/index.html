@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>深圳大学教育技术系</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, maximum-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="email=no" />
+	<meta name="format-detection" content="address=no;">
+	<meta name="keywords" content="深圳大学,教育技术,深大教育技术" />
+	<meta name="description" content="关于教育技术的介绍" />
+	<meta name="author" content="Pang Lin" />
+	<link rel="stylesheet" type="text/css" th:href="@{'css/CSS.css'}">
+	<link rel="stylesheet" type="text/css" th:href="@{'css/index.css'}">
+	<script th:src="@{'resource/basic/jquery/jquery.min.js'}"></script>
+	<script type="text/javascript" th:src="@{'js/main.js'}"></script>
+	<!--[if lt IE 9]>
+	<script th:src="@{'js/html5shiv.js'}"></script>
+	<link rel="stylesheet" th:href="@{'CSS/ie8.css'}" />
+	<![endif]-->
+	<link rel="stylesheet" th:href="@{'/resource/basic/bootstrap/css/bootstrap.min.css'}">
+</head>
+<body>
+	<div class="header">
+		<div id="header_top">
+			<div id="header_top_left">
+				<ul>
+					<li><i id="icon_user"></i>登录</li>
+					<li>深圳大学校内网</li>
+					<li>深圳大学师范学院</li>
+				</ul>
+			</div>
+			<div id="header_top_right">
+				<span>
+					<i id="icon_search"></i>
+					<input type="search" id="search" name="search" placeholder="请输入关键词...">
+				</span>
+				<span><i id="icon_tel"></i>咨询电话：<em>0755-26831111</em></span>
+			</div>
+		</div>
+		<h1 id="logo"><img src="images/logo.jpg" alt=""></h1>
+		<ul id="menu">
+			<li class="on">首页</li>
+			<li><a href="/news">新闻讯息</a></li>
+			<li>总体概览</li>
+			<li>办学条件</li>
+			<li>师资力量</li>
+			<li>办学层次</li>
+			<li>学生组织</li>
+			<li><a href="/photo">风采展示</a></li>
+			<li>校友空间</li>
+		</ul>
+	</div>
+
+	<div class="container">
+		<div id="container_banner">
+			<div id="banner_btn">
+				<span id="next"></span>
+				<span id="pre"></span>
+			</div>
+			<div id="banner_pic">
+				<ul id="banner_pic_box">
+					<li><img src="images/banner/img01.jpg" alt=""></li>
+					<li><img src="images/banner/img01.jpg" alt=""></li>
+					<li><img src="images/banner/img01.jpg" alt=""></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="container_left">
+			<div id="notice">
+				<div id="title">
+					<h2>公告通知<i>Notice and Message</i></h2>
+					<span>MORE >></span>
+				</div>
+				<ul>
+					<li>
+						<h3>关于报名参加留学服务文化周活动的通知</h3>
+						<span>2018-04-29</span>
+					</li>
+					<li>
+						<h3>关于开展学生学涯与职业规划问卷调研的通知</h3>
+						<span>2018-04-28</span>
+					</li>
+					<li>
+						<h3>第11届全国大学生计算机设计大赛校内选拔赛通知</h3>
+						<span>2018-04-22</span>
+					</li>
+					<li>
+						<h3>讲座通知</h3>
+						<span>2018-04-14</span>
+					</li>
+					<li>
+						<h3>MOOC教学设计期中考试通知</h3>
+						<span>2018-04-01</span>
+					</li>
+					
+				</ul>
+			</div>
+			<div id="FE">
+				<div id="title">
+					<h2>快速入口<i>Fast Entrance</i></h2>
+				</div>
+				<ul>
+					<li id="FE1"><span>专业介绍</span></li>
+					<li id="FE2"><span>科技成果</span></li>
+					<li id="FE3"><span>教师队伍</span></li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div id="container_right">
+			<div id="news">
+				<div id="title">
+					<h2>新闻展示<i>Recent News</i></h2>
+					<span>MORE >></span>
+				</div>
+				<ul>
+					<li>
+						<div id="photo">
+							<img src="images/news/pic.jpg" alt="">
+						</div>
+						<h3>第11届全国大学生计算机设计大赛校内选拔赛评选结果公示</h3>
+						<span>2018-04-16</span>
+						<p>截止到4月10日，第11届全国大学生计算机设计大赛校赛组委会共收到全校各学院的84个团队的报名表。4月14日，组委会邀请来自全校多学院的十位专业评委老师对报名参赛的作品进行评审，通过听取各团队参赛选手的陈述和答辩，几分采用剔除最高分取平均分方式，由评委投票选拔出40件作品获得参加省赛的资格。</p>
+					</li>
+					<li>
+						<div id="photo">
+							<img src="images/news/pic.jpg" alt="">
+						</div>
+						<h3>“中国大学生计算机设计大赛高峰论坛暨十周年纪念大会”我校受到表彰</h3>
+						<span>2018-04-16</span>
+						<p>日前，“中国大学生计算机设计大赛高峰论坛暨十周年纪念大会”在北京大学举行。中国大学生计算机设计大赛自2007 年创立，到2017 年已举办了十届。为总结大赛经验、表彰为大赛发展做出贡献的老师，教育部高等学校大学计算机课程教学指导委员会联合文科计算机教学指导分委员会决定，主办中国大学生计算机设计大赛高峰论坛暨十周年纪念大会。</p>
+					</li>
+					<li>
+						<div id="photo">
+							<img src="images/news/pic.jpg" alt="">
+						</div>
+						<h3>师范学院研究生2017年新生奖学金拟获奖名单公示</h3>
+						<span>2017-11-06</span>
+						<p>根据深圳大学研究生院相关奖学金规定及师范学院相关评审细则，经学生本人申请、学院奖学金评委会评审，现将我学院研究生2017年新生奖学金拟获奖名单公示如下</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="clearbox"></div>
+
+	<div class="footer">
+		<div id="footer_left">
+			<h4>联系我们</h4>
+			<span>咨询电话：400-656-3685｜地址：深圳市南山区深南大道3688深圳大学师范学院</span>
+			<span>友情链接：
+				<em><a href="https://www.szu.edu.cn/">深圳大学</a></em>
+				<em><a href="http://www1.szu.edu.cn">深圳大学校内网</a></em>
+				<em><a href="http://norc.szu.edu.cn/front">深圳大学师范学院</a></em>
+				<em><a href="http://210.39.2.52/ac/home/index/index.html">深圳大学本科生招生网</a></em>
+				<em><a href="http://www.lib.szu.edu.cn/">深圳大学图书馆</a></em>
+			</span>	
+			<span id="copyright">Copyright © 2018 BaoHao All rights reserved. 深圳大学教育技术系</span>
+		</div>
+		<div id="footer_right">
+			<div id="media">
+				<span>关注我们</span>
+				<a href="#"><span id="weibo"></span></a>
+				<a href="#"><span id="wechat"></span></a>
+				<a href="#"><span id="qq"></span></a>
+			</div>
+			<h5>
+				<a href="#">学术合作</a> ｜ 
+				<a href="#">网站声明</a> ｜ 
+				<a href="#">关于我们</a>
+			</h5>
+			<h6 id="code"></h6>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+$(function(){
+	function next(){
+		if($num<2){
+			$num+=1;
+			$('#banner_pic_box').animate({'marginLeft':-($num*$width)},700);		
+		}else{
+			$num=0;
+			$('#banner_pic_box').css({'marginLeft':-($num*$width)});		
+		}
+	}
+
+	function pre(){
+		if($num>0){
+			$num-=1;
+			$('#banner_pic_box').animate({'marginLeft':-($num*$width)},700);		
+		}else{
+			$num=2;
+			$('#banner_pic_box').css({'marginLeft':-($num*$width)},700);		
+		}
+	}
+
+	/*走马灯效果*/
+	$width=$('#banner_pic_box li').width();
+	$num=0;	
+	$('#next').click(function(){
+		next();
+		clearinterval();
+	});
+	$('#pre').click(function(){
+		pre();
+		clearinterval();
+	});
+	setInterval("next()",5000);
+})
+</script>
+
+

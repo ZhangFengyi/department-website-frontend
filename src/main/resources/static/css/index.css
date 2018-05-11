@@ -1,0 +1,610 @@
+@charset "utf-8";
+html,body{
+	width: 100%;
+	height: 100%;
+	min-width: 1200px;
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.clearbox{
+	clear: both;
+}
+
+/** global **/
+.header{
+	width: 100%;
+	height: 160px;
+	box-shadow: 0 2px 3px 3px rgba(0,0,0, .1);
+	background: #fff;
+}
+
+	.header #header_top{
+		width: 100%;
+		height: 40px;
+		background: #f9f9f9;
+		border-bottom: 1px solid rgba(0,0,0, .1);
+	}
+
+		#header_top #header_top_left{
+			float: left;
+			width: 40%;
+		}
+
+			#header_top_left ul{
+				width: 100%;
+				padding: 0 10%;
+			}
+
+				#header_top_left ul li{
+					float: left;
+					font-size: 12px;
+					color: rgba(0,0,0, .8);
+					margin-right: 10px;
+					border-right: 1px solid rgba(0,0,0, .1);
+					margin-top: 15px;
+					padding-right: 10px;
+					cursor: pointer;
+				}
+
+					#header_top_left ul li:hover{
+						text-decoration: underline;
+					}
+
+					#header_top_left ul li:last-child{
+						border: 0;
+					}
+
+					#header_top_left #icon_user{
+						display: block;
+						width: 15px;
+						height: 15px;
+						float: left;
+						background: url(images/index_user.jpg) no-repeat center;
+						background-size: 100% auto;
+						margin-top: -2px;
+						margin-right: 3px;
+					}
+
+		#header_top #header_top_right{
+			float: right;
+			width: 40%;
+			padding-right: 5%;
+		}
+
+			#header_top_right span{
+				float: right;
+				font-size: 12px;
+				color: rgba(0,0,0, .6);
+				margin-top: 15px;
+				margin-right: 10px;
+			}
+
+				#header_top_right #icon_tel{
+					display: block;
+					width: 15px;
+					height: 15px;
+					float: left;
+					background: url(images/index_tel.jpg) no-repeat center;
+					background-size: 100% auto;
+					margin-top: -2px;
+					margin-right: 3px;
+				}
+
+				#header_top_right span em{
+					color: #1973f0;
+					font-weight: bolder;
+				}
+
+				#header_top_right #icon_search{
+					position: absolute;
+					display: block;
+					width: 23px;
+					height: 23px;
+					float: right;
+					border-radius: 50%;
+					background: #1973f0 url(images/index_search.jpg) no-repeat center;
+					background-size: 60% auto;
+					margin-left: 155px;
+					margin-top: -6px;
+				}
+
+					#header_top_right #search{
+						border-radius: 25px;
+						width: 180px;
+						height: 25px;
+						border: 1px solid rgba(0,0,0, .1);
+						padding-left: 10px;
+						margin-top: -10px;
+						outline: none;
+					}
+
+	.header #logo{
+		display: block;
+		float: left;
+		width: 200px;
+		height: 70px;
+		margin: 0 5%;
+		margin-top: 30px;
+	}
+
+		.header #logo img{
+			height: 100%;
+		}
+
+	.header #menu{
+		margin-left: 300px;
+	}
+
+		.header #menu li{
+			display: block;
+			float: left;
+			height: 100%;
+			padding: 50px 20px; 
+			cursor: pointer;
+			text-align: center;
+			font-size: 18px;
+		}
+
+			.header #menu .on{
+				color: #1973f0;
+				font-weight: bolder;
+				border-bottom: 5px solid #1973f0;
+			}
+
+	.container{
+		width: 100%;
+	}
+
+			#container_banner{
+				width: 100%;
+				min-width: 1024px;
+				margin: 0 auto;
+			}
+
+				#banner_btn{
+					width: 100%;
+					min-width: 1024px;
+					margin: 0 auto;
+					position: absolute;
+					margin-top: 16%;
+				}
+
+					#banner_btn>span{
+						display: block;
+						width: 40px;
+						height: 100px;
+						padding: 20px;
+						margin-top: -60px;
+						cursor: pointer;
+					}
+
+						#next{
+							float: right;
+							background:rgba(255,255,255,.1) url(images/next.png) no-repeat center;
+							background-size: 80% auto;
+						}
+
+						#pre{
+							float: left;
+							background:rgba(255,255,255,.1) url(images/pre.png) no-repeat center;
+							background-size: 80% auto;
+						}
+
+				#banner_pic{
+					width: 100%;
+					min-width: 1024px;
+					height: 400px;
+					background:#fff;
+					margin: 0 auto;
+					overflow: hidden;
+				}
+
+					#banner_pic_box{
+						width: 300%;
+					}
+
+						#banner_pic_box>li{
+							width: 33.3%;
+							float: left;
+							vertical-align: middle;
+						}
+
+							#banner_pic_box>li img{
+								width: 100%;
+							}
+
+		#container_left{
+			float: left;
+			width: 35%;
+			min-height: 350px;
+			margin-left: 5%;
+			padding: 30px 0;
+		}
+
+			#container_left #notice{
+				width: 100%;
+			}
+
+				#title{
+					width: 100%;
+					border-bottom: 1px solid rgba(0,0,0, .1);
+					padding: 10px 0;
+				}
+
+					#title h2{
+						display: inline;
+						font-size: 16px;
+						font-weight: bolder;
+						border-bottom: 3px solid #1973f0;
+						padding-bottom: 8px;
+					}
+
+					#title h2 i{
+						font-size: 12px;
+						color: rgba(0,0,0, .4);
+						margin-left: 10px;
+					}
+
+					#title span{
+						display: block;
+						float: right;
+						font-size: 12px;
+						color: #1973f0;
+						font-weight: bolder;
+						margin-top: 2px;
+						cursor: pointer;
+					}
+
+				#notice ul{
+					width: 100%;
+					padding: 10px 0;
+				}
+
+					#notice ul li{
+						line-height: 40px;
+					}
+
+					#notice ul li h3{
+						display: inline-block;
+						font-size: 15px;
+						color: rgba(0,0,0, .8);
+						text-overflow: ellipsis;
+						cursor: pointer;
+					}
+
+						#notice ul li h3:hover{
+							color: #1973f0;
+						}
+
+					#notice ul li span{
+						float: right;
+						font-size: 12px;
+						color: rgba(0,0,0, .4);
+					}
+
+			#container_left	#FE{
+				width: 100%;
+			}
+
+				#FE ul{
+					width: 100%;
+					padding: 20px 0;
+				}
+
+					#FE ul li{
+						float: left;
+						width: 30%;
+						height: 55px;
+						margin: 0 1.5%;
+						cursor: pointer;
+						opacity: 0.8;
+					}
+
+						#FE ul li:hover{
+							opacity: 1.0;
+						}
+
+						#FE span{
+							display: block;
+							width: 100%;
+							line-height: 55px;
+							text-align: center;
+							color: #1480dc;
+							text-align: center;
+						}
+
+						#FE1{
+							background: url(images/vice_img01.jpg) no-repeat center;
+							background-size: 100%;
+						}
+						#FE2{
+							background: url(images/vice_img02.jpg) no-repeat center;
+							background-size: 100%;
+						}
+						#FE3{
+							background: url(images/vice_img03.jpg) no-repeat center;
+							background-size: 100%;
+						}
+
+		
+		#container_right{
+			width: 50%;
+			float: right;
+			margin-right: 5%;
+			padding: 30px 0;
+		}
+
+			#container_right #news{
+				width: 100%;
+			}
+
+				#news ul{
+					padding: 10px 0;
+				}
+
+				#news ul li{
+					width: 100%;
+					height: 112px;
+					padding: 10px 0;
+				}
+
+					#news ul li #photo{
+						width: 150px;
+						height: 100px;
+						float: left;
+						overflow: hidden;
+						margin-right: 10px;
+					}
+
+						#news ul li #photo img{
+							width: 100%;
+						}
+
+					#news ul li h3{
+						display: inline-block;/*行内块元素*/
+						max-width: 350px;
+						font-size: 15px;
+						color: rgba(0,0,0, .8);
+						padding: 15px 0;
+						overflow: hidden;/*超过范围则隐藏*/
+						text-overflow: ellipsis;/*用省略号表示被剪除的文字*/
+						white-space: nowrap;/*文本不会换行除非遇到<br>元素*/
+						cursor: pointer;
+					}
+
+						#news ul li h3:hover{
+							text-decoration: underline;/*鼠标划过时显示下划线*/
+						}
+
+					#news ul li span{
+						float: right;
+						font-size: 12px;
+						color: rgba(0,0,0, .4);
+						padding: 15px 0;
+					}
+
+					#news ul li p{
+						line-height: 1.5em;
+						font-size: 12px;
+						color: rgba(0,0,0, .6);
+						overflow : hidden;
+						text-overflow: ellipsis;/*用省略号表示被剪除的文字*/
+						display: -webkit-box;/*兼容谷歌和safari浏览器*/
+						-webkit-line-clamp: 2;/*显示行数为2*/
+						-webkit-box-orient: vertical;/*内容用垂直排列方式*/
+					}
+
+	.footer{
+		width: 100%;
+		height: 210px;
+		background: #202020;
+		/*margin-top: 40px;*/
+		padding: 20px 5%;
+	}
+
+		#footer_left{
+			float: left;
+			width: 70%;
+		} 
+
+			#footer_left h4{
+				font-size: 16px;
+				font-weight: bolder;
+				color: #fff;
+				line-height: 40px;
+			}
+
+			#footer_left span{
+				font-size: 14px;
+				color: #fff;
+				display: inherit;
+				line-height: 30px;
+			}
+
+				#footer_left span em{
+					font-size: 12px;
+					padding: 0 5px;
+				}
+				#footer_left span em a{
+					text-decoration: none;
+					color: white;
+				}
+				#footer_left span em a:hover{
+							text-decoration: underline;/*鼠标划过时显示下划线*/
+						}
+
+				
+
+			#footer_left #copyright{
+				padding: 20px 0;
+				font-size: 12px;
+			}
+
+		#footer_right{
+			float: right;
+		} 
+
+			#footer_right #media{
+				width: 100%;
+				height: 40px;
+				margin: 20px 0;
+			}
+
+				#footer_right #media span{
+					display: block;
+					font-size: 16px;
+					font-weight: bolder;
+					color: #fff;
+					float: left;
+					margin-right: 15px;
+					opacity: 0.8;
+				}
+
+					#footer_right #media span:hover{
+						opacity: 1.0;
+					}
+
+					#footer_right #media #weibo{
+						width: 40px;
+						height: 40px;
+						background: url(images/icon_media_weibo.jpg) no-repeat center;
+						background-size: 100% auto;
+						margin-top: -12px;
+					}
+
+					#footer_right #media #wechat{
+						width: 40px;
+						height: 40px;
+						background: url(images/icon_media_wechat.jpg) no-repeat center;
+						background-size: 100% auto;
+						margin-top: -12px;
+					}
+
+					#footer_right #media #qq{
+						width: 40px;
+						height: 40px;
+						background: url(images/icon_media_qq.jpg) no-repeat center;
+						background-size: 100% auto;
+						margin-top: -12px;
+					}
+
+			#footer_right h5{
+				width: 100%;
+				text-align: right;
+				font-size: 14px;
+				color: #fff;
+				padding-right: 15px;
+			}
+
+				#footer_right h5 a{
+					color: #fff;
+					text-decoration: none;
+				}
+
+			#footer_right #code{
+				float: right;
+				margin-top: 20px;
+				margin-right: 15px;
+				display: block;
+				width: 50px;
+				height: 50px;
+				background: url(images/footer_code.jpg) no-repeat center;
+				background-size: 100% auto;
+			}
+
+.login{
+	width: 100%;
+	height: 580px;
+	background: url(images/login_bg.jpg) no-repeat center;
+	background-size: 100% auto;
+	overflow: hidden;
+}
+
+	#login_block{
+		width: 330px;
+		height: 300px;
+		background: #fff;
+		border-radius: 5px;
+		overflow: hidden;
+		margin-top: 140px;
+		margin-left: 63%;
+	}
+
+		#login_block_top{
+			width: 100%;
+			height: 45px;
+			background: url(images/login_top_bg.jpg) no-repeat center;
+			background-size: 100% 100%;
+		}
+
+		#login_block_content{
+			width: 100%;
+			padding: 30px;
+		}
+
+			#login_block_content input{
+				display: block;
+				width: 100%;
+				height: 40px;
+				border: 1px solid rgba(0,0,0, .1);
+				outline: none;
+				border-radius: 3px;
+				margin: 10px 0;
+				font-size: 16px;
+			}
+
+				#login_block_content input[type="text"],#login_block_content input[type="password"]{
+					padding-left: 10px;
+				}
+
+				#login_block_content #code{
+					width: 60%;
+					float: left;
+					margin-right: 12px;
+					margin-top: 0px;
+				}
+
+				#login_block_content #codeImg{
+					height: 39px;
+				}
+
+				#login_block_content #subBtn{
+					background: #1daeeb;
+					color: #fff;
+					margin-top: 20px;
+					cursor: pointer;
+				}
+
+				#login_block_content span{
+					float: right;
+					font-size: 14px;
+					color: rgba(0,0,0, .8);
+					padding: 3px 5px;
+				}
+
+					#login_block_content span:hover{
+						text-decoration: underline;
+					}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

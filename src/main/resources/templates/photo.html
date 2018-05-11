@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>深圳大学教育技术系</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, maximum-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="email=no" />
+	<meta name="format-detection" content="address=no;">
+	<meta name="keywords" content="深圳大学,教育技术,深大教育技术" />
+	<meta name="description" content="关于教育技术的介绍" />
+	<meta name="author" content="Pang Lin" />
+	<link rel="stylesheet" type="text/css" href="css/CSS.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script th:src="@{'/resource/basic/jquery/jquery.min.js'}"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<link rel="stylesheet" href="CSS/ie8.css" />
+	<![endif]-->
+	<link rel="stylesheet" th:href="@{'/resource/basic/bootstrap/css/bootstrap.min.css'}">
+</head>
+
+<div class="photoScan" style="display:none;">
+	<div id="photoScan_box">
+		<div id="top">
+			<h2>■ 图片详情</h2>
+			<span id="close">关闭</span>
+		</div>
+		<div id="photo">
+			<h3></h3>
+			<img src="" alt="">
+		</div>
+	</div>
+</div>
+
+<body>
+	<div class="header">
+		<h1 id="logo"><img src="images/logo.jpg" alt=""></h1>
+		<ul id="menu">
+			<li><a href="/">首页</a></li>
+			<li><a href="/news">新闻讯息</a></li>
+			<li>总体概览</li>
+			<li>办学条件</li>
+			<li>师资力量</li>
+			<li>办学层次</li>
+			<li>研学活动</li>
+			<li>学生组织</li>
+			<li class="on">风采展示</li>
+			<li>校友空间</li>
+		</ul>
+	</div>
+	<div class="banner">
+		<img src="images/banner.jpg" alt="">
+	</div>
+
+	<div class="container">
+		<div id="container_left">
+			<ul id="container_left_menu1">
+				<h2>风采展示</h2>
+				
+					<li>系内风采
+				        <ul id="pic_show">
+				           <li>2017年暑假</li>
+				           <li class="on">2016年暑假</li>
+				        </ul>
+				    </li>
+				    <li>视频展示
+				        <ul id="vid_show">
+					       <li>课程优秀作品</li>
+					       <li>比赛优秀作品</li>
+				        </ul>
+				    </li>
+			    </ul>
+		</div>
+		<div id="container_right">
+			<div id="header">
+				<h3>系内风采</h3>
+				<span>你当前的位置： 风采展示  >>  系内风采</span>
+			</div>
+
+			<!-- 图片类型内容 -->
+			<div id="photo">
+				<img src="images/photo/2016/_A0A9073.JPG" title="张永和讲解" alt="">
+				<img src="images/photo/2016/徐晨.jpg" title="徐晨发言" alt="">
+				<img src="images/photo/2016/特约报告三.jpg" title="特约报告" alt="">
+				<img src="images/photo/2016/李成.jpg" title="李成发言" alt="">
+				<img src="images/photo/2016/胡世清.jpg" title="胡世清发言" alt="">
+				<img src="images/photo/2016/林奇贤.jpg" title="林奇贤发言" alt="">
+				<img src="images/photo/2016/论文一等.jpg" title="论文一等奖合照" alt="">
+				<img src="images/photo/2016/论文三等.jpg" title="论文三等奖合照" alt="">
+				<img src="images/photo/2016/志愿者.jpg" title="志愿者合照1" alt="">
+				<img src="images/photo/2016/mmexport1468423851476.jpg" title="志愿者合照2" alt="">
+			</div>
+
+			<div class="clearbox"></div>
+
+			<div id="page">
+				<ul>
+					<li>上一页</li>
+					<li>1</li>
+					<li>2</li>
+					<li>...</li>
+					<li>6</li>
+					<li>下一页</li>
+				</ul>
+			</div>
+			<!-- 图片类型内容 -->
+
+		</div>
+	</div>
+
+	<div class="footer">
+		<div id="footer_left">
+			<h4>联系我们</h4>
+			<span>咨询电话：400-656-3685｜地址：深圳市南山区深南大道3688深圳大学师范学院</span>
+			<span>友情链接：
+				<em><a href="https://www.szu.edu.cn/">深圳大学</a></em>
+				<em><a href="http://www1.szu.edu.cn">深圳大学校内网</a></em>
+				<em><a href="http://norc.szu.edu.cn/front">深圳大学师范学院</a></em>
+				<em><a href="http://210.39.2.52/ac/home/index/index.html">深圳大学本科生招生网</a></em>
+				<em><a href="http://www.lib.szu.edu.cn/">深圳大学图书馆</a></em>
+			</span>	
+			<span id="copyright">Copyright © 2017-2018 BaoHao All Rights Reserved. 深圳大学教育技术系</span>
+		</div>
+		<div id="footer_right">
+			<div id="media">
+				<span>关注我们</span>
+				<a href="#"><span id="weibo"></span></a>
+				<a href="#"><span id="wechat"></span></a>
+				<a href="#"><span id="qq"></span></a>
+			</div>
+			<h5>
+				<a href="#">学术合作</a> ｜ 
+				<a href="#">网站声明</a> ｜ 
+				<a href="#">关于我们</a>
+			</h5>
+			<h6 id="code"></h6>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+$(function(){
+	$("#photo img").click(function(){
+		var $imgUrl=$(this).attr("src");
+		var $title=$(this).attr("title");
+		$("#photoScan_box #photo img").attr("src",$imgUrl);
+		$("#photoScan_box #photo h3").text($title);
+		$(".photoScan").show();
+	})
+
+	$("#photoScan_box #close").click(function(){
+		$(".photoScan").hide();
+	})
+})
+</script>

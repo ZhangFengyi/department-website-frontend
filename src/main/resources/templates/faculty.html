@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>深圳大学教育技术系</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, maximum-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="email=no" />
+	<meta name="format-detection" content="address=no;">
+	<meta name="keywords" content="深圳大学,教育技术,深大教育技术" />
+	<meta name="description" content="关于教育技术的介绍" />
+	<meta name="author" content="Pang Lin" />
+	<link rel="stylesheet" type="text/css" th:href="@{'css/CSS.css'}">
+	<link rel="stylesheet" type="text/css" th:href="@{'css/main.css'}">
+	<script th:src="@{'resource/basic/jquery/jquery.min.js'}"></script>
+	<script type="text/javascript" th:src="@{'js/main.js'}"></script>
+	<!--[if lt IE 9]>
+		<script th:src="@{'js/html5shiv.js'}"></script>
+		<link rel="stylesheet" th:href="@{'CSS/ie8.css'}" />
+	<![endif]-->
+</head>
+<body>
+	<div class="header">
+		<h1 id="logo"><img src="images/logo.jpg" alt=""></h1>
+		<ul id="menu">
+			<li><a href="/" style="text-decoration:none;">首页</a></li>
+			<li><a href="/news" style="text-decoration:none;">新闻讯息</a></li>
+			<li ><a href="/overview" style="text-decoration:none;">总体概览</a></li>
+			<li><a href="/condition" style="text-decoration:none;">办学条件</a></li>
+			<li class="on">师资力量</li>
+			<li>办学层次</li>
+			<li>学生组织</li>
+			<li>风采展示</li>
+			<li>校友空间</li>
+		</ul>
+	</div>
+	<div class="banner">
+		<img src="images/banner.jpg" alt="">
+	</div>
+
+
+	<div class="container">
+		<div id="container_left">
+			<ul id="container_left_menu">
+				<h2>师资力量</h2>
+				<li class="on">教师概况</li>
+				<li>教师简介</li>
+				<li>科研奖励</li>
+				<li>论文发表</li>
+			</ul>
+		</div>
+		<div id="container_right">
+			<div id="header">
+				<h3>教师概况</h3>
+			</div>
+
+			<!-- 文本类型内容 -->
+			<div id="text">
+				<table>
+					<tr>
+						<th>教师</th>
+						<th>职称</th>
+						<th>学历</th>
+						<th>专业背景</th>
+						<th>承担课程</th>
+					</tr>
+					<tr>
+						<td>胡世清</td>
+						<td>教授</td>
+						<td>硕士</td>
+						<td>西北工业大学计算机应用</td>
+						<td>
+							研究生：高级网络技术教育硕士：网络技术与教育应用<br>本科：计算机网络、网络管理与维护、计算机组成原理
+						</td>
+					</tr>
+					<tr>
+						<td>李文光</td>
+						<td>副教授</td>
+						<td>博士</td>
+						<td>北京师范大学教育技术学</td>
+						<td>
+							研究生：教育技术学理论教育硕士：教育技术前沿探讨<br>本科：教育技术学导论、电视编导与制作、数字视频合成技术
+						</td>
+					</tr>
+					<tr>
+						<td>朱春莺</td>
+						<td>副教授</td>
+						<td>硕士</td>
+						<td>北京师范大学物理教育</td>
+						<td>
+							研究生：教学设计教育硕士：教学设计原理与方法<br>本科：教学设计、信息技术课程教学法、学习科学与技术、教育技术研究方法
+						</td>
+					</tr>
+					<tr>
+						<td>涂相华</td>
+						<td>副教授</td>
+						<td>本科</td>
+						<td>四川大学信息工程</td>
+						<td>
+							研究生：网络数据库教育硕士：信息技术与课程整合<br>本科：数据库原理、网络动画设计 FLASH、操作系统
+						</td>
+					</tr>
+					<tr>
+						<td>叶成林</td>
+						<td>副教授</td>
+						<td>本科</td>
+						<td>华南师范大学教育技术学</td>
+						<td>
+							研究生：专业外语教育硕士：教育技术前沿探讨<br>本科：多媒体课件设计与开发、数字媒体概论、数字化学习系统
+						</td>
+					</tr>
+					<tr>
+						<td>陆元明</td>
+						<td>副教授</td>
+						<td>硕士</td>
+						<td>华东师范大学教育技术学</td>
+						<td>
+							研究生：虚拟现实技术与教育游戏软件研究教育硕士：数字化学习系统的设计与开发<br/>本科：教育软件工程、虚拟现实基础及应用、摄影技术与艺术基础
+						</td>
+					</tr>
+					<tr>
+						<td>曹晓明</td>
+						<td>副教授</td>
+						<td>博士</td>
+						<td>北京师范大学教育技术学</td>
+						<td>
+							研究生：虚拟现实技术与教育游戏软件研究教育硕士：数字化学习系统的设计与开发<br/>本科：教育软件工程、虚拟现实基础及应用、摄影技术与艺术基础
+						</td>
+					</tr>
+					<tr>
+						<td>程国雄</td>
+						<td>副教授</td>
+						<td>硕士</td>
+						<td>中国科学院光机所  光学</td>
+						<td>
+							研究生：程序设计实践教育硕士：教育信息管理与学习支持系统设计开发<br/>本科：WEB 应用与网站设计、富媒体程序设计、网络数据库设计
+						</td>
+					</tr>
+					<tr>
+						<td>董志彪</td>
+						<td>高级实验师</td>
+						<td>本科</td>
+						<td>哈尔滨船舶工程学院  自动控制</td>
+						<td>
+							本科：数字录音技术、数字电视制作与播出
+						</td>
+					</tr>
+					<tr>
+						<td>文冰</td>
+						<td>讲师</td>
+						<td>硕士</td>
+						<td>江西师范大学计算机软件理论</td>
+						<td>
+							本科：三维计算机动画、平面设计 Coreldraw、算法分析与设计
+						</td>
+					</tr>
+					<tr>
+						<td>廖红</td>
+						<td>讲师</td>
+						<td>硕士</td>
+						<td>电子科技大学计算机软件理论</td>
+						<td>
+							本科：计算机基础（C）、计算机基础（C#）、数字电路、面向对象程序设计（Java）、软件测试
+						</td>
+					</tr>
+					<tr>
+						<td>何健宁</td>
+						<td>实验师</td>
+						<td>硕士</td>
+						<td>香港浸会大学 电影电视与数码媒体制作</td>
+						<td>
+							本科：设计与创意
+						</td>
+					</tr>
+					<tr>
+						<td>张永和</td>
+						<td>讲师</td>
+						<td>博士</td>
+						<td>北京师范大学教育技术学</td>
+						<td>
+							本科：网络编程实践（Java）、智能机器人、程序设计实践
+						</td>
+					</tr>
+					<tr>
+						<td>李冰</td>
+						<td>讲师</td>
+						<td>博士后</td>
+						<td>加拿大康考迪亚大学计算机网络</td>
+						<td>
+							本科：网络安全技术
+						</td>
+					</tr>
+					<tr>
+						<td>王元元</td>
+						<td>见习讲师</td>
+						<td>博士</td>
+						<td>香港理工大学计算机</td>
+						<td>
+							本科：数据结构
+						</td>
+					</tr>
+				</table>
+			</div>
+			<!-- 文本类型内容 -->
+
+
+		</div>
+	</div>
+
+	<div class="footer">
+		<div id="footer_left">
+			<h4>联系我们</h4>
+			<span>咨询电话：400-656-3685｜地址：深圳市南山区深南大道3688深圳大学师范学院</span>
+			<span>友情链接：
+				<em>深圳大学校内网</em>
+				<em>深圳大学</em>
+				<em>深圳大学校内网</em>
+				<em>深圳大学</em>
+				<em>深圳大学校内网</em>
+			</span>	
+			<span id="copyright">Copyright © 2017-2018 BaoHao All Rights Reserved. 深圳大学教育技术系</span>
+		</div>
+		<div id="footer_right">
+			<div id="media">
+				<span>关注我们</span>
+				<a href="#"><span id="weibo"></span></a>
+				<a href="#"><span id="wechat"></span></a>
+				<a href="#"><span id="qq"></span></a>
+			</div>
+			<h5>
+				<a href="#">学术合作</a> ｜ 
+				<a href="#">网站声明</a> ｜ 
+				<a href="#">关于我们</a>
+			</h5>
+			<h6 id="code"></h6>
+		</div>
+	</div>
+
+
+</body>
+</html>

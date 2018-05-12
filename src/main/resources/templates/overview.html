@@ -13,25 +13,25 @@
 	<meta name="author" content="Pang Lin" />
 	<link rel="stylesheet" type="text/css" th:href="@{'css/CSS.css'}">
 	<link rel="stylesheet" type="text/css" th:href="@{'css/main.css'}">
-	<script th:src="@{'/resource/basic/jquery/jquery.min.js'}"></script>
+	<script th:src="@{'resource/basic/jquery/jquery.min.js'}"></script>
 	<script type="text/javascript" th:src="@{'js/main.js'}"></script>
 	<!--[if lt IE 9]>
-        <script th:src="@{'js/html5shiv.js'}"></script>
-        <link rel="stylesheet" th:href="@{'CSS/ie8.css'}" />
+		<script th:src="@{'js/html5shiv.js'}"></script>
+		<link rel="stylesheet" th:href="@{'CSS/ie8.css'}" />
 	<![endif]-->
 </head>
 <body>
 	<div class="header">
 		<h1 id="logo"><img src="images/logo.jpg" alt=""></h1>
 		<ul id="menu">
-			<li><a href="/" style="text-decoration:none;">首页</a></li>
-			<li class="on">新闻讯息</li>
-			<li><a href="/overview" style="text-decoration:none;">总体概览</a></li>
+			<li>首页</li>
+			<li>新闻讯息</li>
+			<li class="on">总体概览</li>
 			<li>办学条件</li>
 			<li>师资力量</li>
 			<li>办学层次</li>
 			<li>学生组织</li>
-			<li><a href="/photo" style="text-decoration:none;">风采展示</a></li>
+			<li>风采展示</li>
 			<li>校友空间</li>
 		</ul>
 	</div>
@@ -43,47 +43,27 @@
 	<div class="container">
 		<div id="container_left">
 			<ul id="container_left_menu">
-				<h2>新闻报道</h2>
-				<li>公告通知</li>
-				<li class="on">最新资讯</li>
-				<li>专业前沿</li>
+				<h2>总体概览</h2>
+				<li class="on">发展历程</li>
+				<li>学科特色</li>
+				<li>培养方向</li>
+				<li>组织架构</li>
+				<li>招生汇总</li>
 			</ul>
 		</div>
 		<div id="container_right">
 			<div id="header">
-				<h3>最新资讯</h3>
-				<span>你当前的位置： 新闻报道  >>  最新资讯</span>
+				<h3>发展历程</h3>
 			</div>
 
-			<!-- 新闻列表 -->
-			<div id="news">
-				<ul>
-					<li>
-						<img src="images/news/jsjsjds.jpg" alt="大学生计算机设计大赛">
-						<h4>第11届全国大学生计算机设计大赛校内选拔赛评选结果公示</h4>
-						<span>截止到4月10日，第11届全国大学生计算机设计大赛校赛组委会共收到全校各学院的84个团队的报名表。4月14日，组委会邀请来自全校多学院的十位专业评委老师对报名参赛的作品进行评审，通过听取各团队参赛选手的陈述和答辩，几分采用剔除最高分取平均分方式，由评委投票选拔出40件作品获得参加省赛的资格。</span>
-						<span id="date">2018-04-16 </span>
-					</li>
-					<li>
-						<a href="/news/detail" style="text-decoration:none;">
-						    <img src="images/news/reward.jpg" alt="十周年纪念大会">
-						    <h4>“中国大学生计算机设计大赛高峰论坛暨十周年纪念大会”我校受到表彰</h4>
-						    <span>日前，“中国大学生计算机设计大赛高峰论坛暨十周年纪念大会”在北京大学举行。中国大学生计算机设计大赛自2007 年创立，到2017 年已举办了十届。为总结大赛经验、表彰为大赛发展做出贡献的老师，教育部高等学校大学计算机课程教学指导委员会联合文科计算机教学指导分委员会决定，主办中国大学生计算机设计大赛高峰论坛暨十周年纪念大会。</span>
-						    <span id="date">2018-01-01</span>
-						</a>
-					</li>
-				</ul>
+			<!-- 文本类型内容 -->
+			<div id="text">
+				<p>2015年12月26至27日深圳大学师范学院教育信息技术系与全国教师创客联盟在深圳福田区福田中学联合主办《2015年创客教育高峰论坛》2015年12月26至27日深圳大学师范学院教育信息技术系与全国教师创客联盟在深圳福田区福田中学联合主办《2015年创客教育高峰论坛》2015年12月26至27日深圳大学师范学院教育信息技术系与全国教师创客联盟在深圳福田区福田中学联合主办《2015年创客教育高峰论坛》2015年12月26至27日深圳大学师范学院教育信息技术系与全国教师创客联盟在深圳福田区福田中学联合主办《2015年创客教育高峰论坛》2015年12月26至27日深圳大学师范学院教育信息技术系与全国教师创客联盟在深圳福田区福田中学联合主办《2015年创客教育高峰论坛》</p>
+				<p>2015年12月26至27日深圳大学师范学院教育信息技术系与全国教师创客联盟在深圳福田区福田中学联合主办《2015年创客教育高峰论坛》2015年12月26至27日深圳大学师范学院教育信息技术系与全国教师创客联盟在深圳福田区福田中学联合主办《2015年创客教育高峰论坛》2015年12月26至27日深圳大学师范学院教育信息技术系与全国教师创客联盟在深圳福田区福田中学联合主办《2015年创客教育高峰论坛》2015年12月26至27日深圳大学师范学院教育信息技术系与全国教师创客联盟在深圳福田区福田中学联合主办《2015年创客教育高峰论坛》2015年12月26至27日深圳大学师范学院教育信息技术系与全国教师创客联盟在深圳福田区福田中学联合主办《2015年创客教育高峰论坛》</p>
+				<!-- <img src="images/teacher/pic.jpg"> -->
 			</div>
-			<div id="page">
-				<ul>
-					<li>上一页</li>
-					<li>1</li>
-					<li>2</li>
-					<li>...</li>
-					<li>6</li>
-					<li>下一页</li>
-				</ul>
-			</div> 
+			<!-- 文本类型内容 -->
+
 
 		</div>
 	</div>

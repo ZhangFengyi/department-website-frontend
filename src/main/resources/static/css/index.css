@@ -46,8 +46,12 @@ html,body{
 					padding-right: 10px;
 					cursor: pointer;
 				}
+				#header_top_left ul li a{
+					text-decoration: none;
+				    color: rgba(0,0,0, .8);
+				}
 
-					#header_top_left ul li:hover{
+					#header_top_left ul li a:hover{
 						text-decoration: underline;
 					}
 
@@ -107,6 +111,7 @@ html,body{
 					background-size: 60% auto;
 					margin-left: 155px;
 					margin-top: -6px;
+					cursor: pointer;
 				}
 
 					#header_top_right #search{
@@ -134,6 +139,7 @@ html,body{
 
 	.header #menu{
 		margin-left: 300px;
+		overflow: hidden;
 	}
 
 		.header #menu li{
@@ -145,6 +151,10 @@ html,body{
 			text-align: center;
 			font-size: 18px;
 		}
+		.header #menu li a{
+				text-decoration: none;
+				color: #000;
+			}
 
 			.header #menu .on{
 				color: #1973f0;

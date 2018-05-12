@@ -1,7 +1,9 @@
 package com.baohao.departmentwebsitefrontend.controller;
 
 import com.baohao.departmentwebsitefrontend.common.constant.SessionConstants;
+import com.baohao.departmentwebsitefrontend.model.FnInfo;
 import com.baohao.departmentwebsitefrontend.model.UserInfo;
+import com.baohao.departmentwebsitefrontend.service.MenuService;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.IncorrectCredentialsException;
@@ -13,14 +15,21 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import javax.annotation.Resource;
+import java.util.List;
 
 @Controller
 public class LoginController {
     private static final Long timestamp = System.currentTimeMillis();
 
+    @Resource
+    private MenuService menuService;
+
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index(Model model) {
         model.addAttribute("timestamp", timestamp);
+        List<FnInfo> fnInfoList = menuService.getSortedFnInfoList();
+        model.addAttribute("fnInfoList", fnInfoList);
         return "index";
     }
 

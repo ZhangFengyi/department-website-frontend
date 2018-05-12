@@ -35,6 +35,7 @@ html,body{
 	.header #menu{
 		height: 100%;
 		margin-left: 300px;
+		overflow: hidden;
 	}
 
 		.header #menu li{
@@ -44,6 +45,10 @@ html,body{
 			padding: 33px 20px; 
 			cursor: pointer;
 		}
+		.header #menu li a{
+				text-decoration: underline;
+				color: #000;
+			}
 
 			.header #menu .on{
 				background: rgba(25,115,240,1);

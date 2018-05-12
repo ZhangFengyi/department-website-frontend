@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>深圳大学教育技术系</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, maximum-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="email=no" />
+	<meta name="format-detection" content="address=no;">
+	<meta name="keywords" content="深圳大学,教育技术,深大教育技术" />
+	<meta name="description" content="关于教育技术的介绍" />
+	<meta name="author" content="Pang Lin" />
+	<link rel="stylesheet" type="text/css" th:href="@{'css/CSS.css'}">
+	<link rel="stylesheet" type="text/css" th:href="@{'css/main.css'}">
+	<script th:src="@{'resource/basic/jquery/jquery.min.js'}"></script>
+	<script type="text/javascript" th:src="@{'js/main.js'}"></script>
+	<!--[if lt IE 9]>
+		<script th:src="@{'js/html5shiv.js'}"></script>
+		<link rel="stylesheet" th:href="@{'CSS/ie8.css'}" />
+	<![endif]-->
+</head>
+<body>
+	<div class="header">
+		<h1 id="logo"><img src="images/logo.jpg" alt=""></h1>
+		<ul id="menu">
+			<li><a href="/" style="text-decoration:none;">首页</a></li>
+			<li><a href="/news" style="text-decoration:none;">新闻讯息</a></li>
+			<li><a href="/overview" style="text-decoration:none;">总体概览</a></li>
+			<li><a href="/condition" style="text-decoration:none;">办学条件</a></li>
+			<li><a href="/faculty" style="text-decoration:none;">师资力量</a></li>
+			<li><a href="/level" style="text-decoration:none;">办学层次</a></li>
+			<li><a href="/student/organization" style="text-decoration:none;">学生组织</a></li>
+			<li><a href="/photo" style="text-decoration:none;">风采展示</a></li>
+			<li class="on">校友空间</li>
+		</ul>
+	</div>
+	<div class="banner">
+		<img src="images/banner.jpg" alt="">
+	</div>
+
+
+	<div class="container">
+		<div id="container_left">
+			<ul id="container_left_menu">
+				<h2>校友空间</h2>
+				<li class="on">校友信息</li>
+				<li>就业统计</li>
+				<li>校友感言</li>
+			</ul>
+		</div>
+		<div id="container_right">
+			<div id="header">
+				<h3>校友信息</h3>
+			</div>
+
+			<!-- 文本类型内容 -->
+			<div id="text">
+				<p>教育技术 2011 级</p>
+				<table>
+					<tr>
+						<th>序号</th>
+						<th>姓名</th>
+						<th>性别</th>
+						<th>工作单位/职务</th>
+						<th>毕业设计</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>曾凯瑶</td>
+						<td>女</td>
+						<td>深圳前海微众银行股份公司</td>
+						<td>便携式心电监护app设计与开发</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>麦婷</td>
+						<td>女</td>
+						<td>韩国庆熙大学新闻传播专业</td>
+						<td>信息技术课程教学技能培养的研究</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>罗晶</td>
+						<td>女</td>
+						<td>香港教育学院</td>
+						<td>教学机器人在C语言实验教学设计中的应用</td>
+					</tr>
+					<tr>
+
+						<td>4</td>
+						<td>梁美芳</td>
+						<td>女</td>
+						<td>深圳市坪山新区公共事业局</td>
+						<td>从教学录像分析的视角探索师范生教师技能的培养</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>陈晓薇</td>
+						<td>女</td>
+						<td>宝安区代课教师</td>
+						<td>中小学信息技术课中课程导入的研究</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>梁楚疑</td>
+						<td>女</td>
+						<td>汇丰银行深圳分行</td>
+						<td>面向移动端的教学评价系统研究</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>桑哲</td>
+						<td>男</td>
+						<td>深圳市康拓普信息技术有限公司</td>
+						<td>若干新型web技术的综合实践</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>谭惜悦</td>
+						<td>女</td>
+						<td>英国杜伦大学教育评估专业</td>
+						<td>BCI支持下的足球游戏设计</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>谢颖琛</td>
+						<td>女</td>
+						<td>深圳市福永中学</td>
+						<td>云平台的虚拟化与高性能实验设计</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>陈立林</td>
+						<td>女</td>
+						<td>深圳市宝安区教育职员</td>
+						<td>摄影微课程的设计与开发研究</td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>胡美玉</td>
+						<td>女</td>
+						<td>广东省罗定市素龙第一中学</td>
+						<td>MOOC 课程与翻转课堂结合下的教学模式与实施分析</td>
+					</tr>
+					<tr>
+						<td>12</td>
+						<td>冼宝怡</td>
+						<td>女</td>
+						<td>深圳市第三职业技术学校</td>
+						<td>M慕课课程建设中课程监理师的作用和技术规范研究</td>
+					</tr>
+					<tr>
+						<td>13</td>
+						<td>梁颖琛</td>
+						<td>女</td>
+						<td>深圳新叶科技有限责任公司</td>
+						<td>Android早教APP设计</td>
+					</tr>
+					<tr>
+						<td>14</td>
+						<td>王倚羚</td>
+						<td>女</td>
+						<td>崛起实验教育集团-深圳市宝安区翻身实验学校</td>
+						<td>UOOC 学习者前期学习现状研究——以优课课程《数据库原理及应用》为例</td>
+					</tr>
+					<tr>
+						<td>15</td>
+						<td>叶苏柯</td>
+						<td>男</td>
+						<td>深圳市三森装饰设计工程有限公司</td>
+						<td>基于安卓的脑机交互可穿戴设备应用开发研究</td>
+					</tr>
+					<tr>
+						<td>16</td>
+						<td>冼晓欣</td>
+						<td>女</td>
+						<td>深圳市龙华新区玉龙学校</td>
+						<td>公益广告创意设计实践</td>
+					</tr>
+					<tr>
+						<td>17</td>
+						<td>杨柳婷</td>
+						<td>女</td>
+						<td>某小学</td>
+						<td>3DS MAX手机广告研究与制作</td>
+					</tr>
+					<tr>
+						<td>18</td>
+						<td>张宇娴</td>
+						<td>女</td>
+						<td>某日企</td>
+						<td>学生系统网站前端的响应式页面设计</td>
+					</tr>
+					<tr>
+						<td>19</td>
+						<td>莫其燕</td>
+						<td>女</td>
+						<td>陕西万德软件有限公司</td>
+						<td>云计算的教育技术学课程设计</td>
+					</tr>
+					<tr>
+						<td>20</td>
+						<td>黄珊珊</td>
+						<td>女</td>
+						<td>深圳市大康小学</td>
+						<td>教师可控访问粒度的习题管理系统的设计与原型开发</td>
+					</tr>
+					<tr>
+						<td>21</td>
+						<td>许炎霖</td>
+						<td>男</td>
+						<td>深圳云视界文化传播有限公司</td>
+						<td>影视录音制作教学研究</td>
+					</tr>
+					<tr>
+						<td>22</td>
+						<td>黄韵豪</td>
+						<td>男</td>
+						<td>深圳市龙岗区教育职员</td>
+						<td>学生反馈文本分析方法研究</td>
+					</tr>
+					<tr>
+						<td>23</td>
+						<td>阮晓晨</td>
+						<td>女</td>
+						<td>深圳市游乐家教育信息咨询有限公司</td>
+						<td>基于 Unity 的2D赛车游戏设计与开发研究</td>
+					</tr>
+					<tr>
+						<td>24</td>
+						<td>李佳丽</td>
+						<td>女</td>
+						<td>深圳市福田区教育职员</td>
+						<td>微课资源设计与基于HTML5的微课资源整合</td>
+					</tr>
+					<tr>
+						<td>25</td>
+						<td>朱豪杰</td>
+						<td>男</td>
+						<td>深圳市万岁网络科技有限公司</td>
+						<td>云桌面与云存储实验设计</td>
+					</tr>
+					<tr>
+						<td>26</td>
+						<td>罗玮琦</td>
+						<td>女</td>
+						<td>奢侈品个体商户</td>
+						<td>《售卖美好的花店》纪录片制作</td>
+					</tr>
+					<tr>
+						<td>27</td>
+						<td>黄峥</td>
+						<td>男</td>
+						<td>广东鸿联九五信息产业有限公司</td>
+						<td>幼儿心理绘本应用</td>
+					</tr>
+				</table>
+
+				<p>教育技术 2010 级</p>
+				<!--todo-->
+			</div>
+			<!-- 文本类型内容 -->
+
+
+		</div>
+	</div>
+
+	<div class="footer">
+		<div id="footer_left">
+			<h4>联系我们</h4>
+			<span>咨询电话：400-656-3685｜地址：深圳市南山区深南大道3688深圳大学师范学院</span>
+			<span>友情链接：
+				<em>深圳大学校内网</em>
+				<em>深圳大学</em>
+				<em>深圳大学校内网</em>
+				<em>深圳大学</em>
+				<em>深圳大学校内网</em>
+			</span>	
+			<span id="copyright">Copyright © 2017-2018 BaoHao All Rights Reserved. 深圳大学教育技术系</span>
+		</div>
+		<div id="footer_right">
+			<div id="media">
+				<span>关注我们</span>
+				<a href="#"><span id="weibo"></span></a>
+				<a href="#"><span id="wechat"></span></a>
+				<a href="#"><span id="qq"></span></a>
+			</div>
+			<h5>
+				<a href="#">学术合作</a> ｜ 
+				<a href="#">网站声明</a> ｜ 
+				<a href="#">关于我们</a>
+			</h5>
+			<h6 id="code"></h6>
+		</div>
+	</div>
+
+
+</body>
+</html>

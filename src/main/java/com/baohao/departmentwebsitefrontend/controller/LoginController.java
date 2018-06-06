@@ -4,6 +4,7 @@ import com.baohao.departmentwebsitefrontend.common.constant.SessionConstants;
 import com.baohao.departmentwebsitefrontend.model.FnInfo;
 import com.baohao.departmentwebsitefrontend.model.UserInfo;
 import com.baohao.departmentwebsitefrontend.service.MenuService;
+import com.baohao.departmentwebsitefrontend.service.VisitService;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.IncorrectCredentialsException;
@@ -24,6 +25,9 @@ public class LoginController {
 
     @Resource
     private MenuService menuService;
+
+    @Resource
+    private VisitService visitService;
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index(Model model) {
@@ -57,6 +61,7 @@ public class LoginController {
             Subject subject = SecurityUtils.getSubject();
             subject.login(usernamePasswordToken);
             if (subject.isAuthenticated()) {
+                visitService.addVisitInfo((UserInfo) subject.getSession().getAttribute(SessionConstants.ATTR_USER));
                 return "redirect:/";
             } else {
                 return "login";

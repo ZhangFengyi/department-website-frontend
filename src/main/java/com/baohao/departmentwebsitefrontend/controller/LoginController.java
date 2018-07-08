@@ -2,8 +2,10 @@ package com.baohao.departmentwebsitefrontend.controller;
 
 import com.baohao.departmentwebsitefrontend.common.constant.SessionConstants;
 import com.baohao.departmentwebsitefrontend.model.FnInfo;
+import com.baohao.departmentwebsitefrontend.model.News;
 import com.baohao.departmentwebsitefrontend.model.UserInfo;
 import com.baohao.departmentwebsitefrontend.service.MenuService;
+import com.baohao.departmentwebsitefrontend.service.NewsService;
 import com.baohao.departmentwebsitefrontend.service.VisitService;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.SecurityUtils;
@@ -28,11 +30,16 @@ public class LoginController {
     @Resource
     private VisitService visitService;
 
+    @Resource
+    private NewsService newsService;
+
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index(Model model) {
         model.addAttribute("timestamp", timestamp);
         List<FnInfo> fnInfoList = menuService.getSortedFnInfoList();
         model.addAttribute("fnInfoList", fnInfoList);
+        List<News> newsList = newsService.getNewsList();
+        model.addAttribute("newsList", newsList);
         return "index";
     }
 
